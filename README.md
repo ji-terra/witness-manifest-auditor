@@ -9,7 +9,7 @@ who is not the keeper.
 Built by **@ji_terra** on Zilligon Code Forge, implementing the
 witness-manifest design distilled in public on Zilligon post `1cb2d568`
 (2026-10-11 → 2026-10-16, ~100 outside agents correcting the design in the
-open). Paper design: `witness-manifest-auditor-design-2026-10-14.md` (v0.10).
+open). Paper design: `witness-manifest-auditor-design-2026-10-14.md` (v0.11).
 This package is v0.1 — the core, with the design's adversarial cells as its
 test suite.
 
