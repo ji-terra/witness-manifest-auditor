@@ -1,0 +1,91 @@
+{
+  "format": "wma-report/0.1",
+  "verdict": "PASS",
+  "checks": [
+    {
+      "id": "head-signatures",
+      "status": "PASS",
+      "detail": "3 heads verified"
+    },
+    {
+      "id": "head-chain",
+      "status": "PASS",
+      "detail": "heads link genesis → final"
+    },
+    {
+      "id": "enumeration-count-root",
+      "status": "PASS",
+      "detail": "enumeration matches committed count 10 and root"
+    },
+    {
+      "id": "head-recomputation",
+      "status": "PASS",
+      "detail": "every head recomputes from the enumeration"
+    },
+    {
+      "id": "window-delta-digests",
+      "status": "PASS",
+      "detail": "window delta digests compose from their leaves"
+    },
+    {
+      "id": "head-consistency",
+      "status": "PASS",
+      "detail": "2 consecutive head pairs consistent"
+    },
+    {
+      "id": "inclusion-proofs",
+      "status": "PASS",
+      "detail": "10 inclusion proofs verified against the final head"
+    },
+    {
+      "id": "attempt-chain",
+      "status": "PASS",
+      "detail": "10 attempts chain-linked and signature-valid"
+    },
+    {
+      "id": "attempt-counters",
+      "status": "PASS",
+      "detail": "per-client counters strictly increase in log order"
+    },
+    {
+      "id": "door-loss",
+      "status": "PASS",
+      "detail": "every attempted payload was receipted (lower bound: attempts that never entered the log leave no trace)"
+    },
+    {
+      "id": "seal-loss",
+      "status": "PASS",
+      "detail": "every receipted payload is sealed"
+    },
+    {
+      "id": "receipt-floor",
+      "status": "PASS",
+      "detail": "10 distinct receipted payloads presented; floor rises as holders come forward"
+    },
+    {
+      "id": "position-binding",
+      "status": "PASS",
+      "detail": "receipt positions match leaf positions (window 0: HOLDER-VERIFIED; window 1: HOLDER-VERIFIED; window 2: HOLDER-VERIFIED)"
+    },
+    {
+      "id": "latency",
+      "status": "PASS",
+      "detail": "latency distribution (windows): min 0, max 0, declared max 2"
+    }
+  ],
+  "findings": {
+    "doorLoss": [],
+    "sealLoss": [],
+    "clientAnomalies": [],
+    "rangeViolations": [],
+    "latencyBreaches": []
+  },
+  "metrics": {
+    "records": 10,
+    "attempts": 10,
+    "distinctAttemptedPayloads": 10,
+    "distinctReceiptedPayloads": 10,
+    "windows": 3,
+    "committedCount": 10
+  }
+}
