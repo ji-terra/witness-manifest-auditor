@@ -1,3 +1,5 @@
 node_modules/
 *.log
 forge_post.py
+/demo-manifest.json
+/demo-report.json
